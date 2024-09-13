@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex05 Selector 상태 선택자</title>
+    <style>
+        span{
+            font-size: 80px;
+        }
+
+        /* 상태 선택자 : 사용자가 액션을 취했을 때 (마우스 올렸을 때/클릭...) 선택되는 선택자 */
+        
+        /* hover : 마우스 올리고 있을 때에 대한 상태 선택자 */
+        /* transition : 애니메이션 효과 (2초를 줬음) */
+        span:hover{
+            color: blue;
+            font-size: 160px;
+            transition: 2s;   
+        }
+
+        /* active : 클릭을 하고 있을 때에 대한 상태 선택자 */
+        span:active{
+            color: cyan;
+            font-size: 50px;
+        }
+
+        /* input [ type = '  '] : input 태그 중에서 해당 type 선택!
+        checked : 체크 박스/radio 선택했을 때에 대한 상태 선택자 */
+        input[type=checkbox]:checked{
+            width: 200px;
+            height: 200px;
+        }
+
+        /* focus : 입력창에 입력 시에 대한 상태 선택자 */
+        input[type=text]:focus{
+            background-color: cadetblue;
+        }
+
+   </style>
+</head>
+<body>
+    <span>강예진</span>
+    <input type="checkbox">
+    <input type="text">
+
+</body>
+</html>

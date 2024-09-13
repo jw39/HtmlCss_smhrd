@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex04 리스트</title>
+</head>
+
+<body>
+    <h4>여행 준비물</h4> <!-- 순서가 없는 리스트 : ul-->
+    <ul type="square">  <!--리스트 앞 모양 타입 스퀘어로 지정-->
+        <li>여권</li>
+        <li>옷</li>
+        <li>돈</li>
+    </ul>
+
+    <!-- ul>li*3 라고 작성 시 li 3개 생성,, >는 선택자! ul: 부모, li: 자식 -->
+    <!-- <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> -->
+
+    <h4>오늘 일정</h4> <!-- 순서가 있는 리스트 : ol-->
+    <ol type="a"> <!--리스트 앞 모양 타입 a, b, c로 지정-->
+        <li> 카페 </li>
+        <li> 밥 </li>
+        <ul>
+            <li>크림순대국밥</li>
+            <li>달래간장계란</li>
+        </ul>
+        <li> 영화 </li>
+    </ol>
+    <!-- 순서가 있는 리스트가 기호가 아닌 1,2,3 이 디폴트 값-->
+
+    
+    <details> <!--  하위 내용 보여주는 태그 -->
+        <summary>오늘 일정</summary> <!-- 살짝 드롭 박스의 제목..? -->
+        <ol type="a">
+            <li> 카페 </li>
+            <li> 밥 </li>
+            <ul>
+                <li>크림순대국밥</li>
+                <li>달래간장계란</li>
+            </ul>
+            <li> 영화 </li>
+        </ol>
+    </details>
+
+
+
+
+
+
+</body>
+
+</html>

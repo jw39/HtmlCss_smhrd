@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        /* float는 레이아웃 잡을 때 자주 사용 */
+        #i1{
+            background-color: red;
+            float: left;
+        }
+        #i2{
+            background-color: yellow;
+            float: left;
+        }
+        /* float : 근접해있는 태그에 영향을 미침 */
+        /* clear : float의 영향을 지워줌 */
+        #i3{
+            clear: both;
+            float: right;
+            background-color: green;
+            /* 화면상에서 제일 오른쪽으로 떠오르게 만든다 */
+        }
+        #i4{
+            /* clear: both; */
+            background-color: blue;
+            float: right;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="i1"></div>
+    <div id="i2"></div>
+    <div id="i3"></div>
+    <div id="i4"></div>
+</body>
+</html>

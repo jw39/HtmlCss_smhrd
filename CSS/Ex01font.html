@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01 css font</title>
+    <link rel="stylesheet" href="./Ex01.css">
+
+    <!-- style : html 문서 안에 css를 작성할 수 있는 영역 -->
+    <!-- 우선순위 : 인라인 > 내부 > 외부 -->
+    <!-- 내부 스타일 : head에 style 태그 생성한 후 스타일 지정 -->
+    <style>
+        /* 웹 폰트 적용 */
+        @font-face {
+            font-family: 'TTLaundryGothicB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+        /* 웹 캐시 (cache) => ctrl+f5 (캐시 삭제) */
+
+        span {
+            color: pink;
+            font-size: 50px;
+            font-weight: bold;
+            font-style: italic; 
+            font-family: 'TTLaundryGothicB';
+            text-decoration: underline;
+        }
+
+    /*  사이즈 설정 => font-size, 픽셀(px) 단위
+        굵기 설정 => font-weight
+        기울임체 -> font-style: iltalic
+        폰트 설정 => font-family  */
+
+    </style>
+</head>
+
+<body>
+    <!-- 인라인 스타일 : 태그에 style 속성으로 스타일 지정 -->
+    <span style="color: yellowgreen;">박경민</span>
+    <span style="color: palevioletred;">지영은</span>
+    <span style="color: greenyellow;">최지원</span>
+    <span>박주헌</span>
+
+    <p>경영지주 모임은 5월 31일</p>
+
+</body>
+
+</html>

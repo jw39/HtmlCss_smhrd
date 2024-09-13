@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex04Sele apple실습</title>
+    <style>
+        /* 둘 다 한 번에 가능 */
+        plate+apple {
+            color: red;
+        }
+
+        /* apple1 선택, 근접후행 + 다음에는 클래스, 아이디 다 가능 */
+        /* plate+.small{  
+            color: blue;
+        } */
+
+        /* 왜 애플을 쓴 거지 */
+        /* apple:nth-child(5){
+            color: red;
+        } */
+
+        /* 그룹 선택자 : 선택자를 여러 개 지정해서 같은 스타일 적용하고 싶을 때 사용 */
+        /* :nth-child(3), :nth-child(5){
+            color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <bento>
+            <apple class="small" />
+        </bento>
+        <plate>plate1</plate>
+        <apple class="small">apple1</apple>
+        <plate>plate2</plate>
+        <apple>apple2</apple>
+        <apple class="small">apple3</apple>
+        <apple class="small">apple4</apple>
+    </div>
+</body>
+
+</html>

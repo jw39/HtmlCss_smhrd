@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* display : inline, block, none */
+        /* none : 안보이게(자리차지 X) */
+        /* inline : 크기(content) 지정 불가능 -> 실제 컨텐츠만큼만 크기 차지함 */
+        b{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+        /* block(content) : 크기 지정 가능 */
+        div{
+            display: inline-block;
+            /* inline-block : (inline)한 줄에 여러 컨텐츠가 오지만 동시에 (block) 크기 지정도 가능 */
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display(가시속성) : 기본값이 inline (콘텐츠만큼만 크기를 차지함) -->
+    <input type="text">
+    <a href="#">a태그</a>
+    <b>b 태그</b>
+    <span>span태그</span>
+
+    <hr>
+    <!-- display : 기본값이 block (전체 가로 길이를 전부 차지함 -> 한 줄에 한 개만 올 수 있음) -->
+    <h3>h3태그</h3>
+    <p>p태그</p>
+    <div>div 태그</div>
+    <div>div 태그</div>
+
+
+
+</body>
+
+</html>
